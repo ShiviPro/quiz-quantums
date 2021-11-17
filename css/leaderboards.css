@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+:root {
+  --black: #2c3e50;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--black);
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
+  background: #ffe259; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffa751,
+    #ffe259
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffa751,
+    #ffe259
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* created a gradient via the usage of linear-gradient css function, 
+      and set as background-image */
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+.non-underlined-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-name {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 3rem;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
+
+.brand-name:hover {
+  transform: scale(1.05);
+}
+
+.navbar-item {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.navbar-img {
+  font-size: 3rem;
+  transition-duration: 0.5s;
+  transition-property: transform;
+}
+
+.navbar-item:hover .navbar-img {
+  transform: scale(1.2);
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+hr {
+  margin: 0 auto;
+  width: 98vw;
+  border: 1px solid var(--black);
+}
+
+.main-content {
+  margin: 20px;
+  width: 75%;
+}
+
+table {
+  width: 120%;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+table tr th,
+table tr td {
+  font-size: 2em;
+  padding-right: 60px;
+}
+
+table,
+table tr,
+table tr th,
+table tr td {
+  border: 1px solid var(--black);
+  border-collapse: collapse;
+}
+
+.user-entry {
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.user-entry a {
+  text-decoration: none;
+}
+
+.non-user-entry {
+  text-align: center;
+}
+
+.user-entry a {
+  opacity: 0.75;
+}
+
+.user-entry a:hover {
+  opacity: 1;
+}
+
+.copyright-text-container {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.copyright-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
