@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+:root {
+  --black: #2c3e50;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--black);
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
+  background: #ffe259; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffa751,
+    #ffe259
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffa751,
+    #ffe259
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* created a gradient via the usage of linear-gradient css function, 
+      and set as background-image */
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+.non-underlined-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-content {
+  width: 100%;
+
+  animation-name: fadein;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.main-content:hover {
+  transform: scale(1.05);
+}
+
+.quiz-container {
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(21, 4, 133, 0.3);
+  /* // here a box-shadow of 0 x and y offsets is created, 
+    with blur-radius of 10px and spread-radius of 2px, and is 
+    of black color.  */
+  width: 800px;
+  max-width: 100%;
+  overflow: hidden;
+  /* done in order to hide the overlaying elements's css
+     interfering with the current element's css*/
+}
+
+.quiz-header {
+  padding: 4rem;
+}
+
+#timer {
+  font-weight: 800;
+  font-size: 1.5em;
+  position: relative;
+  left: 82%;
+  bottom: 20px;
+  color: #6a097d;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+ul li input,
+ul li label {
+  cursor: pointer;
+}
+
+button {
+  background-color: #9b59b6;
+  cursor: pointer;
+  /* used in order to change the cursor into a pointer 
+    on focussing the button */
+  display: block;
+  color: white;
+  width: 100%;
+  padding: 1.1rem;
+  font-size: 1.3rem;
+  font-family: inherit;
+  border: none;
+}
+
+button:hover {
+  background-color: #8e44ad;
+}
+
+button:focus {
+  background-color: #7f8c8d;
+}
+
+.brand-name {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 3rem;
+
+  animation: fadein;
+  animation-duration: 1.5s;
+
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
+
+.brand-name:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar-item {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px;
+
+  animation: fadein;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+.navbar-img {
+  font-size: 3rem;
+  transition-duration: 0.5s;
+  transition-property: transform;
+}
+
+.navbar-item:hover .navbar-img {
+  transform: scale(1.2);
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000;
+  font-weight: 800;
+}
+
+hr {
+  margin: 0 auto;
+  width: 98vw;
+  border: 1px solid var(--black);
+}
+
+.main-content {
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+
+.m-cont-text {
+  margin: auto;
+}
+
+.m-cont-text-1 {
+  padding: 20px;
+  text-align: center;
+}
+
+.m-cont-text-2 {
+  padding: 20px;
+  text-align: center;
+}
+
+#submit {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 25px;
+  background-color: #ffe259;
+  color: #fff;
+  font-size: 2em;
+}
+
+#submit:hover {
+  background-color: #ffa751;
+}
+
+.copyright-text-container {
+  margin-top: 70px;
+  font-size: 20px;
+
+  animation: fadein;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+.copyright-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
