@@ -6,7 +6,7 @@ or
 
 Just want to try some fun quizzes :yum: ?
 
-## Introductions
+## Introduction
 
 Then Quiz Quantums(QQs) is your goto place for enjoying fun quizzes based on various topics.
 
